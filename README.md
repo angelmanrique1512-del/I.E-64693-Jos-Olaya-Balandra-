@@ -1,5 +1,6 @@
 # I.E-64693-Jos-Olaya-Balandra-
 <img width="354" height="372" alt="image" src="https://github.com/user-attachments/assets/d53fc02e-cf50-4470-89f1-725e12365176" />
+
 SOTFWARE DE ACISTENCIA DE DOCENTES
 
 INTRUDUCCIÓN 
