@@ -53,4 +53,14 @@ SQL – Creación de tablas (DDL)
 SQL – Inserción y consultas (DML)
 <img width="1033" height="697" alt="image" src="https://github.com/user-attachments/assets/96662410-00ba-4bf5-8310-c507cb065c13" />
 
+<img width="945" height="548" alt="image" src="https://github.com/user-attachments/assets/b9ec9909-b8a0-4c77-a33c-eae948294586" />
+
+DISEÑO FIGMA MOVILE
+
+<img width="1108" height="932" alt="image" src="https://github.com/user-attachments/assets/0bda9004-a4d1-4f4b-a372-64c116d3a2ae" />
+<img width="1063" height="811" alt="image" src="https://github.com/user-attachments/assets/a5772afb-4547-490c-9986-bd7ee1cca937" />
+
+
+
+
 
