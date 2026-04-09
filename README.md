@@ -28,12 +28,13 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 
 ## Requerimientos Funcionales
 | Codigo | Descripcion |
-el sistema debe permitir registrar asistencia de docentes mediante DNI.
-debe validar si el DNI pertenece a un docente registrado.
-puede evitar duplicidad de asistencia en el mismo día.
-el sistema debe registrar fecha y hora automáticamente.
-el sistema debe mostrar historial de asistencia.
-El sistema debe ser rápido menos de 10 segundos.
+|---|---|
+| RF01 |el sistema debe permitir registrar asistencia de docentes mediante DNI.|
+| RF01 |debe validar si el DNI pertenece a un docente registrado.|
+| RF01 |puede evitar duplicidad de asistencia en el mismo día.|
+| RF01 |el sistema debe registrar fecha y hora automáticamente.|
+| RF01 |el sistema debe mostrar historial de asistencia.|
+| RF01 |El sistema debe ser rápido menos de 10 segundos.|
 
 Requerimientos no Funcionales
 Debe ser fácil de usar interfaz simple.
