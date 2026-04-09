@@ -43,23 +43,23 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 | RNF02 |Debe garantizar seguridad de datos.|
 | RNF03 |Debe estar disponible en horario escolar.|
 
-Modelo relacional
+##Modelo relacional
 <img width="847" height="428" alt="image" src="https://github.com/user-attachments/assets/ccaaaf0e-e9bf-4131-8c1e-913fb2e03c2e" />
 
-Modelo Entidad-Relación (MER)
+##Modelo Entidad-Relación (MER)
 <img width="1035" height="553" alt="image" src="https://github.com/user-attachments/assets/d5941ff5-328d-4680-88ed-7c3da5eb276e" />
 
 CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
 
-SQL – Creación de tablas (DDL)
+##SQL – Creación de tablas (DDL)
 <img width="1030" height="579" alt="image" src="https://github.com/user-attachments/assets/78b2ced9-882f-40b9-93ae-71f0884bd58b" />
 
-SQL – Inserción y consultas (DML)
+##SQL – Inserción y consultas (DML)
 <img width="1033" height="697" alt="image" src="https://github.com/user-attachments/assets/96662410-00ba-4bf5-8310-c507cb065c13" />
 
 <img width="945" height="548" alt="image" src="https://github.com/user-attachments/assets/b9ec9909-b8a0-4c77-a33c-eae948294586" />
 
-DISEÑO FIGMA MOVILE
+##DISEÑO FIGMA MOVILE
 
 <img width="1108" height="932" alt="image" src="https://github.com/user-attachments/assets/0bda9004-a4d1-4f4b-a372-64c116d3a2ae" />
 <img width="1063" height="811" alt="image" src="https://github.com/user-attachments/assets/a5772afb-4547-490c-9986-bd7ee1cca937" />
