@@ -44,9 +44,11 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 | RNF03 |Debe estar disponible en horario escolar.|
 
 ##Modelo relacional
+
 <img width="847" height="428" alt="image" src="https://github.com/user-attachments/assets/ccaaaf0e-e9bf-4131-8c1e-913fb2e03c2e" />
 
 ##Modelo Entidad-Relación (MER)
+
 <img width="1035" height="553" alt="image" src="https://github.com/user-attachments/assets/d5941ff5-328d-4680-88ed-7c3da5eb276e" />
 
 CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
