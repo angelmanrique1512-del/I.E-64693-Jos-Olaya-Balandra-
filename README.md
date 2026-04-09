@@ -20,7 +20,7 @@ POSIBLES SUPLANTACIÓN DE IDENTIDAD AL FIRMAR POR OTRO DOCENTE.
 PERDIDA DE TIEMPO O FALTA DE INFORMACIÓN INMEDIATA SOBRE QUE DOCENTES ASISTIERON.
 POR ESTE CASO LA DIRECTORA CONSIDERA IMPLEMENTAR ESTE SISTEMA PARA MEJORAR EL CONTROL DE SUS DOCENTES.
 
-SOLUCIÓN
+## SOLUCIÓN
 EL SOTFWARE ES PARA LA ASISTENCIA DE PROFESORES DE LA I.E JOSE
 OLAYA BALANDRA POR MEDIO DE SU NUMERO DE DNI CON EL FIN DE
 MEJORAR EL CONTROL DE DOCENTES EN EL AÑO ESCOLAR FOBORECIENDO
@@ -30,16 +30,18 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 | Codigo | Descripcion |
 |---|---|
 | RF01 |el sistema debe permitir registrar asistencia de docentes mediante DNI.|
-| RF01 |debe validar si el DNI pertenece a un docente registrado.|
-| RF01 |puede evitar duplicidad de asistencia en el mismo día.|
-| RF01 |el sistema debe registrar fecha y hora automáticamente.|
-| RF01 |el sistema debe mostrar historial de asistencia.|
-| RF01 |El sistema debe ser rápido menos de 10 segundos.|
+| RF02 |debe validar si el DNI pertenece a un docente registrado.|
+| RF03 |puede evitar duplicidad de asistencia en el mismo día.|
+| RF04 |el sistema debe registrar fecha y hora automáticamente.|
+| RF05 |el sistema debe mostrar historial de asistencia.|
+| RF06 |El sistema debe ser rápido menos de 10 segundos.|
 
-Requerimientos no Funcionales
-Debe ser fácil de usar interfaz simple.
-Debe garantizar seguridad de datos.
-Debe estar disponible en horario escolar.
+## Requerimientos no Funcionales
+| Codigo | Descripcion |
+|---|---|
+| RNF01 |Debe ser fácil de usar interfaz simple.|
+| RNF02 |Debe garantizar seguridad de datos.|
+| RNF03 |Debe estar disponible en horario escolar.|
 
 Modelo relacional
 <img width="847" height="428" alt="image" src="https://github.com/user-attachments/assets/ccaaaf0e-e9bf-4131-8c1e-913fb2e03c2e" />
