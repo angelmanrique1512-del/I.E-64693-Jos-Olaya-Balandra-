@@ -51,10 +51,30 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 
 <img width="1035" height="553" alt="image" src="https://github.com/user-attachments/assets/d5941ff5-328d-4680-88ed-7c3da5eb276e" />
 
+```sql
 CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
 
 ##SQL – Creación de tablas (DDL)
-<img width="1030" height="579" alt="image" src="https://github.com/user-attachments/assets/78b2ced9-882f-40b9-93ae-71f0884bd58b" />
+create database registro;
+use registro;
+CREATE TABLE Docente (
+    dni CHAR(8) PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    curso VARCHAR(50)
+);
+
+CREATE TABLE Asistencia (
+    id_asistencia INT AUTO_INCREMENT PRIMARY KEY,
+    dni CHAR(8) NOT NULL,
+    fecha DATE NOT NULL,
+    hora_entrada TIME,
+    hora_salida TIME,
+    estado VARCHAR(10),
+    FOREIGN KEY (dni) REFERENCES Docente(dni),
+    UNIQUE (dni, fecha)
+    );
+
 
 ##SQL – Inserción y consultas (DML)
 <img width="1033" height="697" alt="image" src="https://github.com/user-attachments/assets/96662410-00ba-4bf5-8310-c507cb065c13" />
