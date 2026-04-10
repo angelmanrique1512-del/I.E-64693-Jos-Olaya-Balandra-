@@ -51,9 +51,9 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 
 <img width="1035" height="553" alt="image" src="https://github.com/user-attachments/assets/d5941ff5-328d-4680-88ed-7c3da5eb276e" />
 
-```sql
-CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
 
+CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
+```sql
 ##SQL – Creación de tablas (DDL)
 create database registro;
 use registro;
@@ -79,10 +79,40 @@ CREATE TABLE Asistencia (
 ---
 
 ##SQL – Inserción y consultas (DML)
-<img width="1033" height="697" alt="image" src="https://github.com/user-attachments/assets/96662410-00ba-4bf5-8310-c507cb065c13" />
+```sql
+INSERT INTO Docente VALUES 
+('00000003', 'Luis', 'Ramirez', 'ept'),
+('00000004', 'Maria', 'Lopez', 'Ciencia'),
+('00000005', 'Carlos', 'Perez', 'Matemática'),
+('00000006', 'Ana', 'Torres', 'Inglés'),
+('00000007', 'Jorge', 'Castro', 'comunicación'),
+('00000008', 'Lucia', 'Vargas', 'Arte'),
+('00000009', 'Pedro', 'Rojas', 'Física'),
+('00000010', 'Sofia', 'Mendoza', 'dpcc');
 
-<img width="945" height="548" alt="image" src="https://github.com/user-attachments/assets/b9ec9909-b8a0-4c77-a33c-eae948294586" />
 
+INSERT INTO Asistencia (dni, fecha, hora_entrada) VALUES
+('00000001', '2026-03-21', '07:50:00'), #Temprano
+('00000002', '2026-03-21', '08:30:00'), #Tarde
+('00000003', '2026-03-22', NULL);       #falta
+
+SELECT 
+d.nombre,d.apellidos,d.curso,a.fecha,a.hora_entrada,a.estado
+FROM Asistencia a
+INNER JOIN Docente d ON a.dni = d.dni;
+SELECT d.nombre, a.fecha, a.hora_entrada
+FROM Asistencia a
+INNER JOIN Docente d ON a.dni = d.dni
+WHERE a.hora_entrada <= '08:00:00';
+SELECT d.nombre, a.fecha, a.hora_entrada
+FROM Asistencia a
+INNER JOIN Docente d ON a.dni = d.dni
+WHERE a.hora_entrada > '08:00:00';
+
+
+```
+
+---
 ##DISEÑO FIGMA MOVILE
 
 <img width="1108" height="932" alt="image" src="https://github.com/user-attachments/assets/0bda9004-a4d1-4f4b-a372-64c116d3a2ae" />
