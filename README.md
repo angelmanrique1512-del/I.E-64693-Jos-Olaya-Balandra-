@@ -74,7 +74,9 @@ CREATE TABLE Asistencia (
     FOREIGN KEY (dni) REFERENCES Docente(dni),
     UNIQUE (dni, fecha)
     );
+```
 
+---
 
 ##SQL – Inserción y consultas (DML)
 <img width="1033" height="697" alt="image" src="https://github.com/user-attachments/assets/96662410-00ba-4bf5-8310-c507cb065c13" />
