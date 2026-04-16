@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .sidebar {
+    left: -220px;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  main {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+}
