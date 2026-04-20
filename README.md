@@ -55,8 +55,9 @@ ASI SU TRABAJO Y VIENESTAR DE LA INSTITUCIÓN.
 CARDINALEDAD:  DOCENTE (1): (N) ASISTENCIA
 ```sql
 ##SQL – Creación de tablas (DDL)
-create database registro;
-use registro;
+CREATE DATABASE registro;
+USE registro;
+
 CREATE TABLE Docente (
     dni CHAR(8) PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -70,10 +71,10 @@ CREATE TABLE Asistencia (
     fecha DATE NOT NULL,
     hora_entrada TIME,
     hora_salida TIME,
-    estado VARCHAR(10),
+    estado VARCHAR(15),
     FOREIGN KEY (dni) REFERENCES Docente(dni),
     UNIQUE (dni, fecha)
-    );
+);
 ```
 
 ---
@@ -81,33 +82,32 @@ CREATE TABLE Asistencia (
 ##SQL – Inserción y consultas (DML)
 ```sql
 INSERT INTO Docente VALUES 
-('00000003', 'Luis', 'Ramirez', 'ept'),
-('00000004', 'Maria', 'Lopez', 'Ciencia'),
-('00000005', 'Carlos', 'Perez', 'Matemática'),
-('00000006', 'Ana', 'Torres', 'Inglés'),
-('00000007', 'Jorge', 'Castro', 'comunicación'),
-('00000008', 'Lucia', 'Vargas', 'Arte'),
-('00000009', 'Pedro', 'Rojas', 'Física'),
-('00000010', 'Sofia', 'Mendoza', 'dpcc');
+('00000001', 'Luis', 'Ramirez', 'EPT'),
+('00000002', 'Maria', 'Lopez', 'Ciencia'),
+('00000003', 'Carlos', 'Perez', 'Matemática'),
+('00000004', 'Ana', 'Torres', 'Inglés'),
+('00000005', 'Jorge', 'Castro', 'Comunicación'),
+('00000006', 'Lucia', 'Vargas', 'Arte'),
+('00000007', 'Pedro', 'Rojas', 'Física'),
+('00000008', 'Sofia', 'Mendoza', 'DPCC');
 
 
-INSERT INTO Asistencia (dni, fecha, hora_entrada) VALUES
-('00000001', '2026-03-21', '07:50:00'), #Temprano
-('00000002', '2026-03-21', '08:30:00'), #Tarde
-('00000003', '2026-03-22', NULL);       #falta
+INSERT INTO Asistencia (dni, fecha, hora_entrada, estado) VALUES
+('00000001', '2026-03-21', '06:50:00', 'Temprano'),
+('00000002', '2026-03-21', '07:30:00', 'Tardanza'),
+('00000003', '2026-03-22', NULL, 'Falta');
 
-SELECT 
-d.nombre,d.apellidos,d.curso,a.fecha,a.hora_entrada,a.estado
-FROM Asistencia a
-INNER JOIN Docente d ON a.dni = d.dni;
-SELECT d.nombre, a.fecha, a.hora_entrada
-FROM Asistencia a
-INNER JOIN Docente d ON a.dni = d.dni
-WHERE a.hora_entrada <= '08:00:00';
-SELECT d.nombre, a.fecha, a.hora_entrada
-FROM Asistencia a
-INNER JOIN Docente d ON a.dni = d.dni
-WHERE a.hora_entrada > '08:00:00';
+UPDATE Asistencia 
+SET estado = 'Temprano'
+WHERE id_asistencia > 0 AND hora_entrada < '07:10:00';
+
+UPDATE Asistencia 
+SET estado = 'Tardanza'
+WHERE id_asistencia > 0 AND hora_entrada >= '07:10:00';
+
+UPDATE Asistencia 
+SET estado = 'Falta'
+WHERE id_asistencia > 0 AND hora_entrada IS NULL;
 
 
 ```
