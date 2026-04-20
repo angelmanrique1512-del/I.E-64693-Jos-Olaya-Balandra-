@@ -118,7 +118,8 @@ WHERE id_asistencia > 0 AND hora_entrada IS NULL;
 <img width="1108" height="932" alt="image" src="https://github.com/user-attachments/assets/0bda9004-a4d1-4f4b-a372-64c116d3a2ae" />
 <img width="1063" height="811" alt="image" src="https://github.com/user-attachments/assets/a5772afb-4547-490c-9986-bd7ee1cca937" />
 
-
+##ENLACE DE FIGMA
+https://www.figma.com/design/ALETE11U7srpZnlilG9nst/Sin-t%C3%ADtulo?m=auto&t=5i0AwE4Cg0nMOr6Y-6
 
 
 
